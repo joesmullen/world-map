@@ -106,8 +106,7 @@ void draw() {
     // box 1
     if (screen == 0) {
         fill(#009933);
-    }
-    else if (screen < 5) {
+    } else if (screen < 5) {
         fill(0,255,0);
     } else {
         // draw the flag in the rectangle's place
@@ -198,8 +197,7 @@ void draw() {
     // box 2
     if (screen == 0) {
         fill(#1682E2);
-    }
-    else if (screen < 5) {
+    } else if (screen < 5) {
         fill(255,0,0);
     } else {
         fill(#FF9900); // orange
@@ -295,8 +293,7 @@ void draw() {
     // box 3
     if (screen == 0) {
         fill(#E80C0C);
-    }
-    else if (screen < 5) {
+    } else if (screen < 5) {
         fill(0,120,240);
     } else {
         fill(#00FFFF); // light blue
@@ -337,8 +334,7 @@ void draw() {
     // box 4
     if (screen == 0) {
         fill(#EAEC3D);
-    }
-    else if (screen < 5) {
+    } else if (screen < 5) {
         fill(0,125,125);
     } else {
         fill(#00FFFF); // same light blue as box 3 - to indicate both are clickable
@@ -466,9 +462,8 @@ void mousePressed() {
             if (mouseX > 450 && mouseX < 750 && mouseY > 450 && mouseY < 650) {
                 screen = 4;
             }
-        }
-        // african countries
-        else if (screen == 1) {  
+        } else if (screen == 1) {  
+            // african countries
             // kenya
             if (mouseX > 40 && mouseX < 340 && mouseY > 150 && mouseY < 350) {
                 screen = 5;
@@ -485,9 +480,8 @@ void mousePressed() {
             if (mouseX > 450 && mouseX < 750 && mouseY > 450 && mouseY < 650) {
                 screen = 8;
             }
-        }
-        // american countries
-        else if (screen == 2) {  
+        } else if (screen == 2) {  
+            // american countries
             // brazil
             if (mouseX > 40 && mouseX < 340 && mouseY > 150 && mouseY < 350) {
                 screen = 9;
@@ -504,9 +498,8 @@ void mousePressed() {
             if (mouseX > 450 && mouseX < 750 && mouseY > 450 && mouseY < 650) {
                 screen = 12;
             }
-        }
-        // asian countries
-        else if (screen == 3) {  
+        } else if (screen == 3) {  
+            // asian countries
             // china
             if (mouseX > 40 && mouseX < 340 && mouseY > 150 && mouseY < 350) {
                 screen = 13;
@@ -523,9 +516,8 @@ void mousePressed() {
             if (mouseX > 450 && mouseX < 750 && mouseY > 450 && mouseY < 650) {
                 screen = 16;
             }
-        }
-        // european countries
-        else if (screen == 4) {  
+        } else if (screen == 4) {  
+            // european countries
             // france
             if (mouseX > 40 && mouseX < 340 && mouseY > 150 && mouseY < 350) {
                 screen = 17;
@@ -544,11 +536,10 @@ void mousePressed() {
             }
         } else {
             // play the national anthem - box 3 (bottom left)
+            // or play the hello - box 4 (bottom right)
             if (mouseX > 40 && mouseX < 340 && mouseY > 450 && mouseY < 650) {
                 playAnthem();
-            }
-            // play hello - box 4 (bottom right)
-            else if (mouseX > 450 && mouseX < 750 && mouseY > 450 && mouseY < 650) {
+            } else if (mouseX > 450 && mouseX < 750 && mouseY > 450 && mouseY < 650) {
                 playHello();
             }
         }
@@ -566,21 +557,17 @@ void keyPressed() {
         // if on any of the "choose a country" screens, go back to the initial screen
         if (screen > 0 && screen < 5) {
             screen = 0;
-        }
-        // go back to choosing african countries
-        else if (screen >= 5 && screen < 9) {
+        } else if (screen >= 5 && screen < 9) {
+            // go back to choosing african countries
             screen = 1;
-        }
-        // american countries
-        else if (screen >= 9 && screen < 13) {
+        } else if (screen >= 9 && screen < 13) {
+            // american countries
             screen = 2;
-        }
-        // asian countries
-        else if (screen >= 13 && screen < 17) {
+        } else if (screen >= 13 && screen < 17) {
+            // asian countries
             screen = 3;
-        }
-        // european countries
-        else if (screen >= 17 && screen < 21) {
+        } else if (screen >= 17 && screen < 21) {
+            // european countries
             screen = 4;
         }
     }

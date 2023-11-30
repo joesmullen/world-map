@@ -3,10 +3,22 @@
 This is my project for CS171 (Computer Systems 1), an interactive world map made in Processing. Of
 the 30 topics available, I chose this one due to my passion for geography.
 
-The user can choose from four continents (Africa, the Americas, Asia, and Europe), each with four
-countries. When the user selects a country, they can see the country's flag and capital city, as 
-well as hear how to say "hello" in one of its main languages, and a brief snippet of the national 
-anthem. The user can also restart or go back to the previous screen at any time.
+# ✈️ features
+
+- Choose from four continents (Africa, the Americas, Asia, and Europe), each with four countries
+- Discover a country's flag, capital city, national anthem, and how to say "hello" in one of its 
+main languages
+- Go back to the previous screen or restart at any time
+
+# 📸 screenshots
+
+![The continent select screen.](/screenshots/continents.png)
+
+![The country select screen for Africa.](/screenshots/countries.png)
+
+![The screen for Ireland.](/screenshots/ireland.png)
+
+# 🤔 development & reflection
 
 I got most of the "hello" voices from [Sound of Text](https://soundoftext.com/); the exceptions 
 being the Irish and Yoruba ones, which I had to hunt down from 
